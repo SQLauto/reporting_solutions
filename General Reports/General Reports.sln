@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "WideWorldImporters", "WideWorldImporters\WideWorldImporters.rptproj", "{FF65D4E9-7B28-4D9C-A261-50E4F7A3E13C}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "HealthCareApplication", "HealthCareApplication\HealthCareApplication.rptproj", "{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -20,6 +22,14 @@ Global
 		{FF65D4E9-7B28-4D9C-A261-50E4F7A3E13C}.Release|Default.ActiveCfg = Release
 		{FF65D4E9-7B28-4D9C-A261-50E4F7A3E13C}.Release|Default.Build.0 = Release
 		{FF65D4E9-7B28-4D9C-A261-50E4F7A3E13C}.Release|Default.Deploy.0 = Release
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Debug|Default.ActiveCfg = Debug
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Debug|Default.Build.0 = Debug
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Debug|Default.Deploy.0 = Debug
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.DebugLocal|Default.Build.0 = DebugLocal
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Release|Default.ActiveCfg = Release
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Release|Default.Build.0 = Release
+		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

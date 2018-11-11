@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Pro_HealthCare_Shared_DS">
+      <DataSourceReference>Pro_HealthCare_DS</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>7c74d33d-e58b-4a3b-9a87-97b61829e263</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="EmpSvcCost_DSet">
+      <Query>
+        <DataSourceName>Pro_HealthCare_Shared_DS</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@ServiceMonth">
+            <Value>=Parameters!ServiceMonth.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ServiceYear">
+            <Value>=Parameters!ServiceYear.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@BranchID">
+            <Value>=Parameters!BranchID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@EmployeeTblID">
+            <Value>=Parameters!EmployeeTblID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ServicesLogCtgryID">
+            <Value>=Parameters!ServicesLogCtgryID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Emp_Svc_Cost</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PatID">
+          <DataField>PatID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Patient_Name">
+          <DataField>Patient Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchName">
+          <DataField>BranchName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmployeeID">
+          <DataField>EmployeeID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Employee_Name">
+          <DataField>Employee Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmployeeClassID">
+          <DataField>EmployeeClassID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Service_Type">
+          <DataField>Service Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Estimated_Cost">
+          <DataField>Estimated Cost</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Visit_Count">
+          <DataField>Visit_Count</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Diagnosis">
+          <DataField>Diagnosis</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Month">
+          <DataField>Month</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ServiceTypeID">
+          <DataField>ServiceTypeID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ChargeServiceStartDate">
+          <DataField>ChargeServiceStartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="ServiceMonth">
+      <DataType>Integer</DataType>
+      <Prompt>Service Month</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServiceYear">
+      <DataType>Integer</DataType>
+      <Prompt>Service Year</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BranchID">
+      <DataType>Integer</DataType>
+      <Prompt>Branch ID</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EmployeeTblID">
+      <DataType>Integer</DataType>
+      <Prompt>Employee Tbl ID</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServicesLogCtgryID">
+      <DataType>String</DataType>
+      <Prompt>Services Log Ctgry ID</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter1">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>ServiceMonth</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>ServiceYear</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>BranchID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>EmployeeTblID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>ServicesLogCtgryID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>ReportParameter1</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>1e8ec530-9b75-47a6-b7cc-5d917e8d9b8e</rd:ReportID>
+</Report>
