@@ -52,7 +52,7 @@
     <DataSource Include="Pro_HealthCare_DS.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="EmployeeServiceCost.rdl" />
+    <Report Include="List Start.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
