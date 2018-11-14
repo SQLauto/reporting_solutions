@@ -7,6 +7,11 @@ Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "WideWorldImporters", "WideW
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "HealthCareApplication", "HealthCareApplication\HealthCareApplication.rptproj", "{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthCareApplication_Documents", "HealthCareApplication_Documents", "{C29704AA-33FE-4EBC-970E-5D77C5C0212E}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Chart Instructions.docx = Docs\Chart Instructions.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default

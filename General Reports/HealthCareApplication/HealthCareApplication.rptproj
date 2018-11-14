@@ -52,6 +52,7 @@
     <DataSource Include="Pro_HealthCare_DS.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="Chart Start.rdl" />
     <Report Include="List Start.rdl" />
     <Report Include="Matrix Start.rdl" />
     <Report Include="Table Start.rdl" />
