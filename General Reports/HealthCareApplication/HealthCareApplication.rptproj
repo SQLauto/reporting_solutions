@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="List Start.rdl" />
+    <Report Include="Matrix Start.rdl" />
     <Report Include="Table Start.rdl" />
     <Report Include="Textbox Start.rdl" />
   </ItemGroup>
