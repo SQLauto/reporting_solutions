@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthCareApplication_Docum
 		Docs\Chart Instructions.docx = Docs\Chart Instructions.docx
 	EndProjectSection
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DeliveryServices", "DeliveryServices\DeliveryServices.rptproj", "{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -35,6 +37,14 @@ Global
 		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Release|Default.ActiveCfg = Release
 		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Release|Default.Build.0 = Release
 		{4D1060EA-D3D7-421C-8F65-D92E27D6F9A5}.Release|Default.Deploy.0 = Release
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.Debug|Default.ActiveCfg = Debug
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.Debug|Default.Build.0 = Debug
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.Debug|Default.Deploy.0 = Debug
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.DebugLocal|Default.Build.0 = DebugLocal
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.Release|Default.ActiveCfg = Release
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.Release|Default.Build.0 = Release
+		{2F143EFF-17A8-462D-A5E3-C6AB2637C1A7}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
