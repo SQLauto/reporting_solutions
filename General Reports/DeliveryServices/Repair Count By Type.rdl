@@ -52,6 +52,40 @@ ORDER BY RepairCause, TypeOfWork</CommandText>
                 <TablixCornerRow>
                   <TablixCornerCell>
                     <CellContents>
+                      <Textbox Name="Textbox5">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Repair Cause</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontWeight>Bold</FontWeight>
+                                  <TextDecoration>Underline</TextDecoration>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                  <TablixCornerCell>
+                    <CellContents>
                       <Textbox Name="Textbox4">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
@@ -60,7 +94,11 @@ ORDER BY RepairCause, TypeOfWork</CommandText>
                             <TextRuns>
                               <TextRun>
                                 <Value>Type Of Work</Value>
-                                <Style />
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontWeight>Bold</FontWeight>
+                                  <TextDecoration>Underline</TextDecoration>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
@@ -153,7 +191,11 @@ ORDER BY RepairCause, TypeOfWork</CommandText>
                             <TextRuns>
                               <TextRun>
                                 <Value>=Fields!TypeOfTransport.Value</Value>
-                                <Style />
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontWeight>Bold</FontWeight>
+                                  <TextDecoration>Underline</TextDecoration>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
@@ -179,34 +221,35 @@ ORDER BY RepairCause, TypeOfWork</CommandText>
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="TypeOfWork">
+                  <Group Name="RepairCause">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!TypeOfWork.Value</GroupExpression>
+                      <GroupExpression>=Fields!RepairCause.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!TypeOfWork.Value</Value>
+                      <Value>=Fields!RepairCause.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>2.35in</Size>
+                    <Size>1.78333in</Size>
                     <CellContents>
-                      <Textbox Name="TypeOfWork">
+                      <Textbox Name="txtRepairCause">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!TypeOfWork.Value</Value>
-                                <Style />
+                                <Value>=Fields!RepairCause.Value</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>TypeOfWork</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -220,23 +263,106 @@ ORDER BY RepairCause, TypeOfWork</CommandText>
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="TypeOfWork">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!TypeOfWork.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!TypeOfWork.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixHeader>
+                        <Size>2.35in</Size>
+                        <CellContents>
+                          <Textbox Name="TypeOfWork">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=Fields!TypeOfWork.Value</Value>
+                                    <Style />
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>TypeOfWork</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                        <ToggleItem>txtRepairCause</ToggleItem>
+                      </Visibility>
+                    </TablixMember>
+                  </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>RepairsByType_DSet</DataSetName>
+            <Top>0.43056in</Top>
             <Height>0.44167in</Height>
-            <Width>4.4in</Width>
+            <Width>6.18333in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Repair Count By Type Report</Value>
+                    <Style>
+                      <FontSize>16pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox8</rd:DefaultName>
+            <Height>0.36111in</Height>
+            <Width>6.225in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>2in</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>6.225in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
